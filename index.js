@@ -7,7 +7,7 @@ import { adminRouter } from "./Routes/AdminRoute.js";
 
 const app = express();
 app.use(cors({
-    origin: ['https://employ-manage-sys.netlify.app'], // Update this to match your Netlify URL
+    origin: ['https://sys-emp.netlify.app'], // Update this to match your Netlify URL
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
 }));
