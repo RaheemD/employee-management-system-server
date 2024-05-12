@@ -20,10 +20,7 @@ app.use(express.json());
 app.use('/auth', adminRouter);
 app.use(express.static('Public'))
 
-// Add a simple route at the root URL to check if the server is running
-app.get('/', (req, res) => {
-    res.send('Hello World! Server is running!');
-});
+
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
